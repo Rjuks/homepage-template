@@ -1,0 +1,32 @@
+@import "variables";
+
+@mixin sectionContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 30px auto;
+  width: 70%;
+}
+
+@mixin sectionSeparator {
+  width: 60px;
+  height: 3px;
+  background-color: $section-separator-color;
+  margin: 40px auto;
+}
+
+
+@mixin sectionHeader {
+  text-align: center;
+
+  h2 {
+    font-size: 35px;
+    font-weight: bold;
+  }
+
+  p {
+    font-family: 'Courgette', cursive;
+    font-size: 20px;
+  }
+}

@@ -1,0 +1,56 @@
+.Section__amazingServices_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 30px auto;
+  width: 70%;
+}
+
+.Section__amazingServices_header {
+  text-align: center;
+}
+
+.Section__amazingServices_header h2 {
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.Section__amazingServices_header p {
+  font-family: 'Courgette', cursive;
+  font-size: 20px;
+}
+
+.Section__amazingServices_separator {
+  width: 60px;
+  height: 3px;
+  background-color: #db2626;
+  margin: 40px auto;
+}
+
+.Container__grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 45px;
+}
+
+.Container__grid_item {
+  display: flex;
+}
+
+.Container__grid_item-information-title {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.Container__grid_item-information-description {
+  color: #c9c9c9;
+}
+
+.Container__grid_item-icon {
+  width: 32px;
+  height: 32px;
+  filter: brightness(0) saturate(100%) invert(58%) sepia(55%) saturate(380%) hue-rotate(85deg) brightness(92%) contrast(88%);
+  margin: 0 20px 0 0;
+}

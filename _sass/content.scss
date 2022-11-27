@@ -1,0 +1,44 @@
+@import "mixins";
+
+.Section__amazingServices_container {
+@include sectionContainer
+}
+
+.Section__amazingServices_header {
+  @include sectionHeader
+}
+
+.Section__amazingServices_separator {
+  @include sectionSeparator
+}
+
+.Container__grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 45px;
+
+  &_item {
+    display: flex;
+
+    &-information {
+
+      &-title {
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+
+      &-description {
+      color: #c9c9c9;
+      }
+    }
+
+    &-icon {
+      width: 32px;
+      height: 32px;
+      filter: $svg-filter-color-green;
+      margin: 0 20px 0 0;
+    }
+  }
+}
+

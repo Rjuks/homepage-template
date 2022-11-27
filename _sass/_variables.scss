@@ -7,6 +7,8 @@ $media-width-large: 1080px;
 $primary-color: #e5bb51;
 $white-color: #fff;
 
+$section-separator-color: #db2626;
+
 
 $z-index-1: -1;
 $z-index-2: 10;
@@ -16,6 +18,7 @@ $z-index-5: 99;
 
 
 $hero-gradient: linear-gradient(0deg, rgba(242,247,122,0.7) 0%, rgba(226,82,72,0.7) 100%);
-$navbar-svg-filter-hover: brightness(0) saturate(100%) invert(94%) sepia(53%) saturate(6157%) hue-rotate(314deg) brightness(93%) contrast(93%)
+$svg-filter-hover-color: brightness(0) saturate(100%) invert(94%) sepia(53%) saturate(6157%) hue-rotate(314deg) brightness(93%) contrast(93%);
+$svg-filter-color-green: brightness(0) saturate(100%) invert(58%) sepia(55%) saturate(380%) hue-rotate(85deg) brightness(92%) contrast(88%);
 
 
