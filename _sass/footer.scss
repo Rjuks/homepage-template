@@ -1,0 +1,83 @@
+@import "variables";
+
+.Footer {
+  width: 70%;
+  margin: 0 auto;
+  padding: 15px 0 80px 0;
+  border-top: 1px solid $gray-color;
+
+  span {
+   color: $pink-color;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+
+    &-copyright {
+      font-size: 16px;
+    }
+
+
+    &_email {
+      display:flex;
+
+      &-input {
+        padding: 8px 27px 8px 5px;
+        margin: 0;
+        border-left: 1px solid $gray-color;
+        border-top: 1px solid $gray-color;
+        border-bottom: 1px solid $gray-color;
+      }
+
+      &-button {
+        margin: 0 0 0 -4px;
+        padding: 6px 15px;
+        color: $white-color;
+        background-color: $green-light-color;
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+
+@media (max-width: $media-width-medium-2) {
+
+  .Footer__content {
+    display: flex;
+    flex-direction: column;
+    &_copyright {
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+    &_email {
+      &-input {
+        font-size: 14px;
+        padding: 3px 27px 3px 5px;
+      }
+
+      &-button {
+        margin: 0 0 0 -4px;
+        padding: 4px 10px;
+        font-size: 10px;
+      }
+    }
+  }
+}
+
+
+@media (max-width: $media-width-small-2) {
+
+  .Footer__content_copyright {
+    font-size: 10px;
+  }
+
+  .Footer__content_email-input {
+    font-size: 10px;
+    width: 110px;
+    padding: 3px 0 3px 5px;
+  }
+}
