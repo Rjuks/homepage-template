@@ -6,9 +6,10 @@ $media-width-large: 1080px;
 
 $primary-color: #e5bb51;
 $white-color: #fff;
+$pink-color: #e08888;
 
+$font-decoration-color: #c9c9c9;
 $section-separator-color: #db2626;
-
 
 $z-index-1: -1;
 $z-index-2: 10;
@@ -16,9 +17,8 @@ $z-index-3: 20;
 $z-index-4: 30;
 $z-index-5: 99;
 
-
-$hero-gradient: linear-gradient(0deg, rgba(242,247,122,0.7) 0%, rgba(226,82,72,0.7) 100%);
-$svg-filter-hover-color: brightness(0) saturate(100%) invert(94%) sepia(53%) saturate(6157%) hue-rotate(314deg) brightness(93%) contrast(93%);
+$gradient-primary: linear-gradient(0deg, rgba(242,247,122,0.7) 0%, rgba(226,82,72,0.7) 100%);
+$svg-filter-color-orange: brightness(0) saturate(100%) invert(94%) sepia(53%) saturate(6157%) hue-rotate(314deg) brightness(93%) contrast(93%);
 $svg-filter-color-green: brightness(0) saturate(100%) invert(58%) sepia(55%) saturate(380%) hue-rotate(85deg) brightness(92%) contrast(88%);
-
-
+$svg-filter-color-white:  brightness(0) saturate(100%) invert(100%) sepia(1%) saturate(1570%) hue-rotate(305deg) brightness(118%) contrast(100%);
+$svg-filter-color-pink: brightness(0) saturate(100%) invert(67%) sepia(68%) saturate(326%) hue-rotate(314deg) brightness(85%) contrast(106%);

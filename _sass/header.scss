@@ -13,7 +13,7 @@
   position: absolute;
   left: 0;
   top: 0;
-  background: $hero-gradient;
+  background: $gradient-primary;
 }
 
 .Header__hero__image {
@@ -94,7 +94,7 @@
   height: 16px;
 
   &:hover {
-    filter: $svg-filter-hover-color;
+    filter: $svg-filter-color-orange;
   }
 }
 
