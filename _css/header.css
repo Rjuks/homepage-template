@@ -1,0 +1,125 @@
+.Header {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+}
+
+.Header__hero {
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: linear-gradient(0deg, rgba(242, 247, 122, 0.7) 0%, rgba(226, 82, 72, 0.7) 100%);
+}
+
+.Header__hero__image {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  object-fit: contain;
+  opacity: 0.15;
+}
+
+.Header__section {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+}
+
+.Header__section-title {
+  font-size: 60px;
+  font-family: 'Courgette', cursive;
+  margin-bottom: 20px;
+}
+
+.Header__section-description {
+  margin-bottom: 70px;
+  font-size: 100px;
+  font-weight: bold;
+  line-height: 100px;
+}
+
+.Header__section-button {
+  border: 3px solid white;
+  padding: 5px 15px;
+  background-color: transparent;
+  color: #fff;
+}
+
+.Navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 14px 40px;
+}
+
+.Navbar__list {
+  display: flex;
+}
+
+.Navbar__logo {
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+}
+
+.Navbar__list_item-link {
+  color: #fff;
+  text-transform: uppercase;
+  border-bottom: 3px solid transparent;
+  padding-bottom: 4px;
+  margin: 0 25px;
+}
+
+.Navbar__list_item-link:hover {
+  color: #e5bb51;
+  border-bottom: 2px solid #e5bb51;
+}
+
+.Navbar__list_item-icon {
+  width: 16px;
+  height: 16px;
+}
+
+.Navbar__list_item-icon:hover {
+  filter: brightness(0) saturate(100%) invert(94%) sepia(53%) saturate(6157%) hue-rotate(314deg) brightness(93%) contrast(93%);
+}
+
+@media (max-width: 920px) {
+  .Navbar__list_item-link {
+    padding-bottom: 4px;
+    margin: 0 7px;
+  }
+}
+
+@media (max-width: 600px) {
+  .Header {
+    position: relative;
+    width: 100%;
+    height: 60vh;
+  }
+  .Navbar__list {
+    display: none;
+  }
+  .Header__section-title {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+  .Header__section-description {
+    margin-bottom: 40px;
+    font-size: 60px;
+    line-height: 60px;
+  }
+}

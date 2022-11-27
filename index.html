@@ -4,13 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>My Website</title>
+    <title>Template</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="_css/header.css">
+    <link rel="icon" href="./resources/favicon.ico" type="image/x-icon">
 </head>
 <body>
 <main>
-    <h1>Welcome to My Website</h1>
+    <!-- Header -->
+    <header class="Header">
+        <!-- Hero  -->
+        <div class="Header__hero">
+            <img class="Header__hero__image" src="resources/images/eagle.png" alt="Eagle image">
+        </div>
+        <section class="Header__section">
+            <h1 class="Header__section-title">Creative Template</h1>
+            <p class="Header__section-description">WELCOME TO MOGO</p>
+            <button class="Header__section-button">LEARN MORE</button>
+        </section>
+        <nav class="Navbar">
+            <a class="Navbar__logo" href="#home">MoGo</a>
+            <ul class="Navbar__list">
+                <li class="Navbar__list_item">
+                    <a class="Navbar__list_item-link" href="#home">ABOUT</a>
+                </li>
+                <li class="Navbar__list_item">
+                    <a class="Navbar__list_item-link" href="#home">SERVICE</a>
+                </li>
+                <li class="Navbar__list_item">
+                    <a class="Navbar__list_item-link" href="#home">Services</a>
+                </li>
+                <li class="Navbar__list_item">
+                    <a class="Navbar__list_item-link" href="#home">Team</a>
+                </li>
+                <li class="Navbar__list_item">
+                    <a class="Navbar__list_item-link" href="#home">Contact</a>
+                </li>
+                <li class="Navbar__list_item">
+                    <a class="Navbar__list_item-link Navbar__list_item-icon" href="#home">
+                        <img src="./resources/icons/cart.svg" alt="Cart">
+                    </a>
+                </li>
+                <li class="Navbar__list_item">
+                    <a class="Navbar__list_item-link Navbar__list_item-icon" href="#home">
+                        <img src="./resources/icons/search.svg" alt="Search">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
 </main>
 </body>
 </html>
