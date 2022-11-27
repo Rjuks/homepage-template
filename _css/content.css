@@ -62,6 +62,12 @@
   margin: 0 20px 0 0;
 }
 
+@media (max-width: 600px) {
+  .Container__grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}
+
 .Section__meetOurTeam_container {
   display: flex;
   flex-direction: column;
@@ -102,24 +108,22 @@
 .Container__people {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .Container__people_item {
-  max-height: 550px;
-  max-width: 320px;
-  flex: 1;
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
+  min-width: 240px;
+  min-height: 430px;
+  flex: 1;
   gap: 20px;
-}
-
-.Container__people_item:nth-child(2) {
-  margin: 0 20px;
+  margin: 0 15px 30px 15px;
 }
 
 .Container__people_item-imageContent {
   position: relative;
-  flex: 2;
 }
 
 .Container__people_item-imageContent-socialMedia {
@@ -127,10 +131,10 @@
 }
 
 .Container__people_item-imageContent-personImg {
+  width: 100%;
   height: 100%;
-  width: auto;
-  object-fit: fill;
-  background-size: contain;
+  object-fit: cover;
+  aspect-ratio: 1/1.5;
 }
 
 .Container__people_item-infoContent {
